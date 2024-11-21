@@ -1,6 +1,7 @@
 package com.example.praktikum7.ui.view
 
 
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.Spacer
@@ -14,6 +15,7 @@ import androidx.compose.material3.ElevatedCard
 import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
+import androidx.compose.material3.TextFieldDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -42,8 +44,9 @@ fun FormMhsView(
 
     val listData: MutableList<String> = mutableListOf(nama,alamat,memilihJk,email,noTelpon)
 
-        Column (modifier = Modifier
+        Column(modifier = Modifier
         .fillMaxSize()
+        .background(color = Color.White)
         .padding(16.dp),
         horizontalAlignment = Alignment.CenterHorizontally
     ){
