@@ -39,3 +39,25 @@ fun DetailMhsView(
         }
     }
 }
+@Composable
+fun DetailMhs(
+    judul: String, isi: String
+){
+    Column (modifier = Modifier
+        .fillMaxWidth()
+        .padding(15.dp),
+    ){
+
+
+        Row (
+            modifier = Modifier.fillMaxWidth()
+        ){
+            Text(text = judul,
+                modifier = Modifier.weight(0.8f))
+            Text(text = ":",
+                modifier = Modifier.weight(0.1f))
+            Text(text = isi,
+                modifier = Modifier.weight(2f))
+        }
+    }
+}
